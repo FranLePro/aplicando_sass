@@ -1,0 +1,33 @@
+main{
+    .containerPasteleriaCannabica{
+        display: grid; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 25% 25% 25% 50%; 
+        grid-template-rows: min-content min-content min-content;  
+        grid-template-areas: 
+        ". imgPasteleriaCannabica imgPasteleriaCannabica ."
+        ". imgPasteleriaCannabica imgPasteleriaCannabica ."
+        ". p5 p5 .";
+    }
+    .imgPasteleriaCannabica{
+        grid-area: imgPasteleriaCannabica;
+        width: 100%;
+        display: flex;
+        transition: all 3s ease;
+        &:hover{
+            transform: rotate(10deg);
+        }
+    }
+    p{
+        padding: 10px;
+        margin: 5px 10px;
+        width: 600px;
+        height: 200px;
+        text-align: center;
+    }
+    .p5{
+        grid-area: p5;
+        width: 100%;
+        display: flex;
+    }
+}
